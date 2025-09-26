@@ -2,42 +2,43 @@ export const teacherTranslations = {
   "en": {
     "title": "SkillSetGo",
     "teacherBtn": "👩‍🏫 Teacher/Staff signup",
-
     "teacherFirst": "First Name",
     "teacherLast": "Last Name",
-    "teacherPassword": "Set Password",
+    "teacherSetPassword": "Set Password",
     "staffSchool": "Select School",
     "staffClass": "Select Class",
     "staffSection": "Select Section",
     "staffID": "Staff ID",
-    "teacherSubmit": "🎯 Access Portal"
+    "teacherSubmit": " Access Portal",
+    "teacherPassword": "Enter Your Password"
   },
 
   "hi": {
     "title": "SkillSetGo",
     "teacherBtn": "👩‍🏫 शिक्षक/स्टाफ साइनअप",
-
     "teacherFirst": "पहला नाम",
     "teacherLast": "अंतिम नाम",
-    "teacherPassword": "पासवर्ड सेट करें",
+    "teacherSetPassword": "पासवर्ड सेट करें",
     "staffSchool": "विद्यालय चुनें",
     "staffClass": "कक्षा चुनें",
     "staffSection": "सेक्शन चुनें",
     "staffID": "स्टाफ आईडी",
-    "teacherSubmit": "🎯 पोर्टल पर जाएं"
+    "teacherSubmit": " पोर्टल पर जाएं",
+    "teacherPassword": "अपना पासवर्ड दर्ज करें"
+
   },
 
   "pa": {
     "title": "SkillSetGo",
     "teacherBtn": "👩‍🏫 ਅਧਿਆਪਕ/ਸਟਾਫ ਸਾਇਨਅਪ",
-
     "teacherFirst": "ਪਹਿਲਾ ਨਾਮ",
     "teacherLast": "ਆਖਰੀ ਨਾਮ",
-    "teacherPassword": "ਪਾਸਵਰਡ ਸੈੱਟ ਕਰੋ",
+    "teacherSetPassword": "ਪਾਸਵਰਡ ਸੈੱਟ ਕਰੋ",
     "staffSchool": "ਸਕੂਲ ਚੁਣੋ",
     "staffClass": "ਕਲਾਸ ਚੁਣੋ",
     "staffSection": "ਸੈਕਸ਼ਨ ਚੁਣੋ",
     "staffID": "ਸਟਾਫ ਆਈ.ਡੀ.",
-    "teacherSubmit": "🎯 ਪੋਰਟਲ ਤੇ ਜਾਓ"
+    "teacherSubmit": " ਪੋਰਟਲ ਤੇ ਜਾਓ",
+    "teacherPassword": "ਆਪਣਾ ਪਾਸਵਰਡ ਦਰਜ ਕਰੋ"
   }
 };

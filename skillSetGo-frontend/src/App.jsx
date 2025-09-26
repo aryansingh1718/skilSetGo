@@ -3,6 +3,8 @@ import StudentSignup from './components/StudentSignup'
 import TeacherSignup from './components/TeacherSignup'
 import StudentLogin from './components/StudentSignin'
 import TeacherLogin from './components/TeacherSignin'
+import StudentDashboard from './components/StudentDashboard'
+import TeacherDashboard from './components/TeacherDashboard'
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import './App.css'
 
@@ -16,6 +18,8 @@ function App() {
         <Route path = "/teacherSignup" element = {<TeacherSignup></TeacherSignup>}></Route>
         <Route path = "/teacherSignin" element = {<TeacherLogin></TeacherLogin>}></Route>
         <Route path = "/studentSignin" element = {<StudentLogin></StudentLogin>}></Route>
+        <Route path = "/studentDashboard" element = {<StudentDashboard></StudentDashboard>}></Route>
+        <Route path = "/teacherDashboard" element = {<TeacherDashboard></TeacherDashboard>}></Route>
       </Routes>
     </BrowserRouter>
   )

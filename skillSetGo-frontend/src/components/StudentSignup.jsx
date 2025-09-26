@@ -1,7 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import { studentTranslations } from "../helper/studentTranslations";
 import { useState } from "react";
 
 export default function StudentSignup() {
+  const navigate = useNavigate();
   const [lang, setLang] = useState("en");
   const t = studentTranslations[lang];
 
@@ -78,15 +80,18 @@ export default function StudentSignup() {
             </div>
 
             <div>
-              <label className="font-bold">{t.studentPassword || "Set Password"}</label>
+              <label className="font-bold">{t.studentSetPassword || "Set Password"}</label>
               <input
                 type="password"
-                placeholder={t.studentPassword || "Set Password"}
+                placeholder={t.studentSetPassword || "Set Password"}
                 className="w-full border p-2 rounded-lg"
               />
             </div>
 
-            <button className="w-full py-2 bg-[#352466] text-white font-bold rounded-lg hover:bg-purple-800 cursor-pointer ease-in-out transform transition-all duration-150">
+            <button className="w-full py-2 bg-[#352466] text-white font-bold rounded-lg hover:bg-purple-800 cursor-pointer ease-in-out transform transition-all duration-150"
+            onClick={() => {
+              navigate("/studentDashboard")
+            }}>
               {t.studentSubmit}
             </button>
           </form>

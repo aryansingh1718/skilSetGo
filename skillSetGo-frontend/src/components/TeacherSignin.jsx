@@ -1,7 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import { teacherTranslations } from "../helper/teacherTranslations";
 import { useState } from "react";
 
 export default function TeacherLogin() {
+  const navigate = useNavigate();
   const [lang, setLang] = useState("en");
   const t = teacherTranslations[lang];
 
@@ -47,7 +49,10 @@ export default function TeacherLogin() {
               />
             </div>
 
-            <button className="w-full py-2 bg-[#352466] text-white font-bold rounded-lg hover:bg-purple-800 cursor-pointer ease-in-out transform transition-all duration-150">
+            <button className="w-full py-2 bg-[#352466] text-white font-bold rounded-lg hover:bg-purple-800 cursor-pointer ease-in-out transform transition-all duration-150"
+            onClick={() => {
+              navigate("/teacherDashboard")
+            }}>
               {t.teacherLoginSubmit || "Login"}
             </button>
           </form>
