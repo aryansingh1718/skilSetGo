@@ -1,12 +1,14 @@
-export default function StudentTopbar(){
+export default function TeacherTopbar(){
     return <div className="fixed top-0 left-0 w-full bg-[#f0f1f2] h-15 flex items-center">
         <div className="flex ml-4">
             <h1 className="text-[#352466] text-3xl font-bold">SkillsetGo</h1>
         </div>
-        <div className="ml-190 flex items-center gap-x-6">
-            <button className="text-[#352466] text-xl font-medium py-2 px-4 mr-5 rounded-3xl cursor-pointer hover:bg-[#352466] hover:text-[#f0f1f2] active:bg-purple-800  ease-in-out transform transition-all duration-200">Quizzes</button>
-            <button className="text-[#352466] text-xl font-medium py-2 px-4 mr-5 rounded-3xl cursor-pointer hover:bg-[#352466] hover:text-[#f0f1f2] active:bg-purple-800  ease-in-out transform transition-all duration-200">Ask Doubt</button>
-            <button className="text-[#352466] text-xl font-medium py-2 px-4 mr-5 rounded-3xl cursor-pointer hover:bg-[#352466] hover:text-[#f0f1f2] active:bg-purple-800  ease-in-out transform transition-all duration-200">Assignments</button>
+        <div className="ml-100">
+            <input type="text" placeholder="Search Student" className="border-2  border-gray-500 px-4 py-2 rounded-3xl w-80"></input>
+        </div>
+        <div className="ml-40 flex items-center gap-x-6">
+            <button className="text-[#352466] text-xl font-medium py-2 px-4 mr-5 rounded-3xl cursor-pointer hover:bg-[#352466] hover:text-[#f0f1f2] active:bg-purple-800  ease-in-out transform transition-all duration-200">Answer Doubts</button>
+            <button className="text-[#352466] text-xl font-medium py-2 px-4 mr-5 rounded-3xl cursor-pointer hover:bg-[#352466] hover:text-[#f0f1f2] active:bg-purple-800  ease-in-out transform transition-all duration-200">Add Student</button>
 
             <div className="cursor-pointer p-3 hover:bg-gray-300 active:bg-gray-400 rounded-2xl">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6">
